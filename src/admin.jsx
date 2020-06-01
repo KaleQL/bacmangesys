@@ -3,19 +3,19 @@ import { Row, Col } from "antd";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NavLeft from "./components/NavLeft";
-import "./index.less";
+import "./style/common.less";
 
 export default class admin extends React.Component {
   render() {
     return (
       <div>
-        <Row>
-          <Col span="4">
+        <Row className="contain">
+          <Col span="4" className="navLeft">
             <NavLeft></NavLeft>
           </Col>
-          <Col span="20" className="rightCon">
+          <Col span="20" className="main">
             <Header></Header>
-            <Row>{this.props.children}</Row>
+            <Row className="con">{this.props.children}</Row>
             <Footer></Footer>
           </Col>
         </Row>
