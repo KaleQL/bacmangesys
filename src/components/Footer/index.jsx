@@ -1,7 +1,8 @@
 import React from "react";
+import "./index.less";
 
 export default class Footer extends React.Component {
   render() {
-    return <div>this is header</div>;
+    return <div className="footer">底部说明</div>;
   }
 }

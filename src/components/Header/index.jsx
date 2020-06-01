@@ -15,7 +15,7 @@ export default class Header extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="navCon">
         <Row className="navTop">
           <Col span="24">
             欢迎，kaley
