@@ -26,7 +26,7 @@ export default class Modals extends React.Component {
     });
   };
   handeCommit = type => {
-    Modal.confirm({
+    Modal[type]({
       title: "Do you want to do?",
       icon: <ExclamationCircleOutlined />,
       content:
@@ -37,7 +37,7 @@ export default class Modals extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div style={{ width: "100%" }}>
         <Card title="基础模态框" className="cardWrap">
           <Button type="primary" onClick={() => this.handeModal("showModal1")}>
             open
